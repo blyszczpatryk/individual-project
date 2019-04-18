@@ -1,4 +1,83 @@
-import "variables";
-import "mixins";
-import "normalize";
-import "layout";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+	background-color: #1F1F1F;
+	width: 193px;
+	height: 100vh;
+	position: fixed;
+	color: #7F7F7F;
+	.nav-logo {
+		display: flex;
+		align-items: center;
+		padding: 14px 20px;
+		i {
+			font-size: 20px;
+			padding-left: 45px;
+			color: #7F7F7F;
+		}
+	}
+	ul {
+		font-size: 15px;
+		list-style-type: none;
+		li {
+			display: flex;
+			align-items: center;
+			padding: 12px 20px;
+			transition: 0.4s;
+			&:hover {
+				border-left: 6px solid #FF7D2D;
+				background-color: #2C2C2C;
+			}
+			&:hover a {
+				color: white;
+			}
+			&:hover img {
+				filter: invert(100%);
+			}
+			img {
+				height: 17px;
+				width: 17px;
+				filter: invert(50%);
+			}
+			a {
+				text-decoration: none;
+				color: #7F7F7F;
+				display: block;
+				padding-left: 10px;
+			}
+		}
+	}
+	.line {
+		border: 0.5px solid #7F7F7F;
+		opacity: 0.2;
+		margin-top: 25px;
+	}
+	.contacts {
+		padding: 25px 20px;
+		font-size: 14px;
+		h4 {
+			text-transform: uppercase;
+			padding-bottom: 10px;
+		}
+		.contact-manager {
+			display: flex;
+			align-items: center;
+			p {
+				padding-left: 10px;
+				cursor: pointer;
+				transition: 0.3s;
+				&:hover {
+					color: #49718A;
+				}
+			}
+		}
+	}
+}
