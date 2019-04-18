@@ -1,1 +1,1 @@
-# individual-project
+https://blyszczpatryk.github.io/individual-project/
