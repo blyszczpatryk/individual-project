@@ -1,3 +1,5 @@
+@import 'layout';
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
@@ -7,6 +9,8 @@
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
+
+/*sidebar*/
 
 .sidebar {
 	background-color: #1F1F1F;
@@ -79,5 +83,56 @@
 				}
 			}
 		}
+	}
+}
+
+/*top bar*/
+
+.top-bar {
+	margin-left: 193px;
+	display: flex;
+	border-bottom: 0.5px solid #E3E3E3;
+	img {
+		height: 18px;
+		width: 18px;
+		filter: invert(50%);
+	}
+	.funds {
+		margin-left: 697px;
+		width: 185px;
+		display: flex;
+		align-items: center;
+		border-left: 0.5px solid #E3E3E3;
+		color: #9B9B9B;
+		padding: 16px;
+		p {
+			font-size: 20px;
+			font-weight: bold;
+			padding: 0 15px;
+		}
+		.top-bar-arrow {
+			height: 8px;
+		}
+	}
+	.notification {
+		border-left: 0.5px solid #E3E3E3;
+		padding: 19px;
+	}
+	.profile {
+		border-left: 0.5px solid #E3E3E3;
+		padding: 16px;
+		display: flex;
+		align-items: center;
+		p {
+			font-size: 13px;
+			color: #49718A;
+			padding: 0 0 0 15px;
+		}
+	}
+	.quit {
+		border-left: 0.5px solid #E3E3E3;
+		padding: 20px;
+		display: flex;
+		align-items: center;
 	}
 }
