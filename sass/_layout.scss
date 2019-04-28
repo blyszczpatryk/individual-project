@@ -1,5 +1,6 @@
 .container {
-	max-width: 100%;
+	width: 70%;
+	margin: 0 auto;
 }
 
 .container::after {
@@ -23,13 +24,6 @@
 
 [class*="col-"] {
 	float: left;
-}
-
-.row::before,
-.row::after {
-  	content: "";
-  	clear: both;
-  	display: table;
 }
 
 @media only screen and (max-width: 767px) {
