@@ -1,0 +1,83 @@
+.top-bar {
+	top: 0;
+	left: 193px;
+	right: 0;
+	position: fixed;
+	background-color: white;
+	display: flex;
+	justify-content: flex-end;
+	border-bottom: 0.5px solid #E3E3E3;
+	z-index: 1;
+	img {
+		height: 18px;
+		width: 18px;
+		filter: invert(50%);
+	}
+	.funds {
+		width: 185px;
+		display: flex;
+		align-items: center;
+		border-left: 0.5px solid #E3E3E3;
+		color: #9B9B9B;
+		padding: 16px;
+		cursor: pointer;
+		transition: 0.4s;
+		&:hover {
+			background-color: #F5F5F2;
+		}
+		p {
+			font-size: 20px;
+			font-weight: bold;
+			padding: 0 15px;
+		}
+		.top-bar-arrow {
+			height: 8px;
+		}
+	}
+	.notification {
+		border-left: 0.5px solid #E3E3E3;
+		padding: 19px;
+		cursor: pointer;
+		transition: 0.4s;
+		position: relative;
+		&:hover {
+			background-color: #F5F5F2;
+		}
+		.notification-dot {
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: #FF7D2D;
+			position: absolute;
+			right: 20px;
+			top: 18px;
+		}
+	}
+	.profile {
+		border-left: 0.5px solid #E3E3E3;
+		padding: 16px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.4s;
+		&:hover {
+			background-color: #F5F5F2;
+		}
+		p {
+			font-size: 13px;
+			color: #49718A;
+			padding: 0 0 0 15px;
+		}
+	}
+	.quit {
+		border-left: 0.5px solid #E3E3E3;
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.4s;
+		&:hover {
+			background-color: #F5F5F2;
+		}
+	}
+}

@@ -1,0 +1,192 @@
+.statistic {
+	margin: 20px;
+	background-color: $section-color;
+	box-shadow: 0px 0px 11px 0px #E3E3E3;
+	.general-statistic {
+		border-bottom: 0.5px solid $border-color;
+		h2 {
+			text-transform: uppercase;
+			font-size: $heading-font-size;
+			color: $main-text-color;
+			font-weight: $heading-font-weight;
+			padding: 13px;
+		}
+	}
+	.date {
+		display: flex;
+		justify-content: center;
+		padding: 35px;
+		border-bottom: 0.5px solid $border-color;
+		p {
+			font-size: 14px;
+			color: $paragraph-color;
+		}
+		.date-from {
+			border: 1px solid $border-color;
+			border-radius: 3px;
+			padding: 10px 60px 0 15px;
+			cursor: pointer;
+			transition: 0.4s;
+			&:hover {
+				border-color: #B1B1B1;
+			}
+		}
+		.date-to {
+			display: flex;
+			padding: 0 10px;
+			border: 1px solid $border-color;
+			border-radius: 3px;
+			padding: 10px 10px 0 15px;
+			cursor: pointer;
+			transition: 0.4s;
+			&:hover {
+				border-color: #B1B1B1;
+			}
+			p {
+				padding-right: 60px;
+			}
+			img {
+				height: 15px;
+				width: 15px;
+				filter: invert(50%);
+			}		
+		}
+		.refresh-btn {
+			display: flex;
+			border-radius: 3px;
+			background-color: $btn-color;
+			padding: 10px;
+			margin-left: 15px;
+			transition: 0.4s;
+			cursor: pointer;
+			&:hover {
+				background-color: $btn-hover-color;
+			}
+			img {
+				height: 18px;
+				width: 18px;
+				filter: invert(100%);
+			}
+		}
+	}
+	.numbers {
+		h3 {
+			font-size: $heading-font-size;
+			color: $main-text-color;
+		}
+		p {
+			color: $paragraph-color;
+			position: absolute;
+			right: 0;
+			bottom: 5px;
+		}
+		.signups {
+			width: 90%;
+			border-bottom: 1px solid $border-color;
+			padding: 20px 0 5px 0;
+			position: relative;
+		}
+		.ftd {
+			width: 90%;
+			border-bottom: 1px solid $border-color;
+			padding: 20px 0 5px 0;
+			position: relative;
+		}
+		.deposit {
+			width: 90%;
+			border-bottom: 1px solid $border-color;
+			padding: 20px 0 5px 0;
+			margin-left: 30px;
+			position: relative;
+		}
+		.turn-over {
+			width: 90%;
+			display: flex;
+			border-bottom: 1px solid $border-color;
+			padding: 20px 0 5px 0;
+			margin-left: 30px;
+			position: relative;
+		}
+	}
+	.earnings {
+		h2 {
+			color: $main-text-color;
+			font-size: $heading-font-size;
+			padding-top: 70px;
+			padding-bottom: 30px;
+		}
+		.chart-buttons {
+			display: flex;
+			justify-content: center;
+			color: #49718A;
+			font-size: $heading-font-size;
+			p {
+				padding-left: 15px;
+			}
+		}
+		.signups-btn {
+			display: flex;
+			align-items: center;
+			padding: 10px 15px;
+			transition: 0.4s;
+			cursor: pointer;
+			&:hover {
+				color: lighten(black, 50);
+				background-color: #F2F3F1;
+				border-radius: 2px;
+			}
+			.blue-dot {
+				background-color: #70BFC8;
+				border-radius: 50%;
+				height: 18px;
+				width: 18px;
+			}
+		}
+		.ftd-btn {
+			display: flex;
+			align-items: center;
+			margin-left: 40px;
+			padding: 10px 15px;
+			transition: 0.4s;
+			cursor: pointer;
+			&:active,
+			&:hover {
+				color: lighten(black, 50);
+				background-color: #F2F3F1;
+				border-radius: 2px;
+			}
+			.orange-dot {
+				background-color: #FF9742;
+				border-radius: 50%;
+				height: 18px;
+				width: 18px;
+			}
+		}
+		.earned-btn {
+			display: flex;
+			align-items: center;
+			margin-left: 40px;
+			padding: 10px 15px;
+			transition: 0.4s;
+			cursor: pointer;
+			&:active,
+			&:hover {
+				color: lighten(black, 50);
+				background-color: #F2F3F1;
+				border-radius: 2px;
+			}
+			.green-dot {
+				background-color: #1BBD74;
+				border-radius: 50%;
+				height: 18px;
+				width: 18px;
+			}
+		}
+	}
+	.chart {
+		padding: 60px 0 40px;
+		img {
+			width: 100%;
+		}
+	}
+}
