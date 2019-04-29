@@ -1,0 +1,70 @@
+.links {
+	margin: 20px;
+	overflow: hidden;
+	background-color: $section-color;
+	.links-text {
+		border-bottom: 0.5px solid $border-color;
+		h2 {
+			text-transform: uppercase;
+			font-size: $heading-font-size;
+			color: $main-text-color;
+			font-weight: $heading-font-weight;
+			padding: 13px;
+		}
+	}
+	.add-btn {
+		width: 120px;
+		border-radius: 3px;
+		background-color: $btn-color;
+		color: white;
+		font-size: 18px;
+		padding: 10px 15px;
+		margin: 23px auto;
+		transition: 0.4s;
+		cursor: pointer;
+		&:hover {
+			background-color: $btn-hover-color;
+		}
+	}
+	table {
+		border-top: 0.5px solid $border-color;
+		border-spacing: 0;
+		color: $main-text-color;
+		font-weight: bold;
+		cursor: pointer;
+		tr {
+			&:hover,
+			&:hover .links-icons {
+				background-color: #F0F3F3;
+				opacity: 1;
+			}
+			td {
+				padding: 20px 20px;
+				border-bottom: 0.5px solid $border-color;
+				a {
+					color: #5D87A3;
+					font-weight: lighter;
+				}
+				.links-icons {
+					opacity: 0;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					img {
+						filter: invert(50%);
+						&:hover {
+							transform: scale(1.2);
+						}
+					}
+					.link-icon {
+						height: 10px;
+						padding-right: 25px;
+					}
+					.trash-icon {
+						height: 15px;
+					}
+				}
+			}
+		}
+	}
+}
