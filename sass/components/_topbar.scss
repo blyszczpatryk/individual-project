@@ -71,7 +71,7 @@
 	}
 	.quit {
 		border-left: 0.5px solid #E3E3E3;
-		padding: 20px;
+		padding: 19px;
 		display: flex;
 		align-items: center;
 		cursor: pointer;
@@ -80,4 +80,8 @@
 			background-color: #F5F5F2;
 		}
 	}
+}
+
+@media only screen and (max-width: 767px) {
+	
 }
