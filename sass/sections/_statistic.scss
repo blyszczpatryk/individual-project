@@ -184,8 +184,10 @@
 	}
 	.chart {
 		padding: 60px 0 40px;
+		text-align: center;
 		img {
-			width: 100%;
+			width: auto;
+			padding: 0 10px;
 		}
 	}
 }
