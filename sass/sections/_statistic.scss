@@ -78,30 +78,27 @@
 			bottom: 5px;
 		}
 		.signups {
-			margin: 0 auto;
 			width: 90%;
 			border-bottom: 1px solid $border-color;
 			padding: 20px 0 5px 0;
 			position: relative;
 		}
 		.ftd {
-			margin: 0 auto;
 			width: 90%;
 			border-bottom: 1px solid $border-color;
 			padding: 20px 0 5px 0;
 			position: relative;
 		}
 		.deposit {
-			margin: 0 auto;
+			float: right;
 			width: 90%;
 			border-bottom: 1px solid $border-color;
 			padding: 20px 0 5px 0;
 			position: relative;
 		}
 		.turn-over {
-			margin: 0 auto;
+			float: right;
 			width: 90%;
-			display: flex;
 			border-bottom: 1px solid $border-color;
 			padding: 20px 0 5px 0;
 			position: relative;
@@ -186,7 +183,6 @@
 		padding: 60px 0 40px;
 		text-align: center;
 		img {
-			width: auto;
 			padding: 0 10px;
 		}
 	}
@@ -194,7 +190,39 @@
 
 @media only screen and (max-width: 767px) {
 	.date {
-		display: none !important;
+		flex-direction: column;
+		.date-from {
+			margin: 0 auto;
+			margin-bottom: 5px;
+			width: 115px;
+			height: 35px;
+		}
+		.date-to {
+			margin: 0 auto;
+			margin-bottom: 5px;
+			width: 185px;
+			height: 35px;
+		}
+		.refresh-btn {
+			width: 40px;
+			margin: 0 auto !important;
+		}
+	}
+	.numbers {
+		.signups {
+			margin: 0 auto;
+		}
+		.ftd {
+			margin: 0 auto;
+		}
+		.deposit {
+			float: none !important;
+			margin: 0 auto;
+		}
+		.turn-over {
+			float: none !important;
+			margin: 0 auto;
+		}
 	}
 	.chart-buttons {
 		display: block !important;

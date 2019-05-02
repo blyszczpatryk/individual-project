@@ -28,6 +28,7 @@
 			align-items: center;
 			padding: 12px 20px;
 			transition: 0.4s;
+			cursor: pointer;
 			&:hover {
 				border-left: 6px solid #FF7D2D;
 				background-color: #2C2C2C;
@@ -44,6 +45,7 @@
 				filter: invert(50%);
 			}
 			a {
+				width: 100%;
 				text-decoration: none;
 				color: #7F7F7F;
 				padding-left: 10px;
@@ -82,8 +84,7 @@
 
 @media only screen and (max-width: 767px) {
 	.show {
-		height: 100vh;
-		display: block !important;
+		height: 100vh !important;
 	}
 
 	.sidebar {
@@ -91,7 +92,12 @@
 		width: 100%;
 		height: auto;
 		.menu {
-			display: none;
+			height: 0;
+			overflow: hidden;
+			transition: height linear .4s;
+			&:hover {
+				height: 500px;
+			}
 			li {
 				padding: 12px 50px;
 			}
@@ -102,67 +108,46 @@
 	}
 	.topbar-elements {
 		display: flex !important;
-		margin-top: 25px;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-between;
+		margin: 25px 50px;
 		img {
 			height: 18px;
 			width: 18px;
 			filter: invert(50%);
 		}
 		.funds {
-			background-color: #F5F5F2;
-			width: 185px;
 			display: flex;
 			align-items: center;
-			justify-content: center;
 			color: #9B9B9B;
-			padding: 16px;
+			padding: 16px 0;
 			cursor: pointer;
-			transition: 0.4s;
-			border-bottom: 0.5px solid #E3E3E3;
 			p {
 				font-size: 20px;
 				font-weight: bold;
 				padding: 0 15px;
 			}
-			.top-bar-arrow {
-				height: 8px;
-			}
 		}
 		.notification {
-			background-color: #F5F5F2;
-			border-left: 0.5px solid #E3E3E3;
-			padding: 19px;
+			display: flex;
+			padding: 19px 0;
 			cursor: pointer;
-			transition: 0.4s;
 			position: relative;
-			border-bottom: 0.5px solid #E3E3E3;
-			&:hover {
-				background-color: #F5F5F2;
-			}
 			.notification-dot {
 				width: 7px;
 				height: 7px;
 				border-radius: 50%;
 				background-color: #FF7D2D;
 				position: absolute;
-				right: 20px;
+				left: 11px;
 				top: 18px;
 			}
 		}
 		.profile {
-			background-color: #F5F5F2;
-			width: 185px;
-			border-left: 0.5px solid #E3E3E3;
-			padding: 16px;
+			padding: 16px 0;
 			display: flex;
 			align-items: center;
 			cursor: pointer;
-			transition: 0.4s;
-			&:hover {
-				background-color: #F5F5F2;
-			}
 			p {
 				font-size: 13px;
 				color: #49718A;
@@ -170,16 +155,10 @@
 			}
 		}
 		.quit {
-			background-color: #F5F5F2;
-			border-left: 0.5px solid #E3E3E3;
-			padding: 19px;
+			padding: 19px 0;
 			display: flex;
 			align-items: center;
 			cursor: pointer;
-			transition: 0.4s;
-			&:hover {
-				background-color: #F5F5F2;
-			}
 		}
 	}
 }
