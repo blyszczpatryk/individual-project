@@ -1,0 +1,66 @@
+.login-modal {
+	width: 100%;
+	.close-btn {
+		display: none;
+	}
+	.login-heading	{
+		border-bottom: 0.5px solid $border-color;
+		h2 {
+			text-transform: uppercase;
+			font-size: $heading-font-size;
+			color: $main-text-color;
+			font-weight: $heading-font-weight;
+			padding: 13px;
+		}
+	}
+	.login-form {
+		form {
+			display: flex;
+			padding: 50px;
+			.field {
+				margin-right: 20px;
+			}
+			input {
+				width: 210px;
+				padding: 10px 40px;
+				border: 0.5px solid $border-color;
+				border-radius: 3px;
+				transition: 0.4s;
+				&:hover,
+				&:focus {
+					outline: none;
+					border: 0.5px solid #B1B1B1;
+				}
+				&::placeholder {
+					color: $main-text-color;
+				}
+			}
+			input[type=text] {
+				background-image: url('/images/icons/login.svg');
+				background-repeat: no-repeat;
+				background-position: 10px 8px;
+				background-size: 18px;
+			}
+			input[type=password] {
+				background-image: url('/images/icons/password.svg');
+				background-repeat: no-repeat;
+				background-position: 10px;
+				background-size: 22px;
+			}
+			.submit {
+				text-align: center;
+				width: 170px;
+				border-radius: 3px;
+				background-color: $btn-color;
+				color: white;
+				font-size: 18px;
+				padding: 10px;
+				transition: 0.4s;
+				cursor: pointer;
+				&:hover {
+					background-color: $btn-hover-color;
+				}
+			}
+		}
+	}
+}
