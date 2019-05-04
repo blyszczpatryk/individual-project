@@ -545,6 +545,10 @@ template {
   display: none;
 }
 
+.hide {
+  width: 80px;
+}
+
 @media only screen and (max-width: 767px) {
   .show {
     height: 100vh !important;
@@ -557,7 +561,7 @@ template {
   .sidebar .menu {
     height: 0;
     overflow: hidden;
-    transition: height linear .4s;
+    transition: height linear .3s;
   }
   .sidebar .menu:hover {
     height: 500px;
@@ -652,10 +656,15 @@ template {
   padding: 16px;
   cursor: pointer;
   transition: 0.4s;
+  position: relative;
 }
 
 .top-bar .funds:hover {
   background-color: #F5F5F2;
+}
+
+.top-bar .funds:hover .funds-dropdown {
+  display: block;
 }
 
 .top-bar .funds p {
@@ -666,6 +675,36 @@ template {
 
 .top-bar .funds .top-bar-arrow {
   height: 8px;
+}
+
+.top-bar .funds .funds-dropdown {
+  display: none;
+  position: absolute;
+  top: 57px;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.top-bar .funds .funds-dropdown ul {
+  list-style-type: none;
+}
+
+.top-bar .funds .funds-dropdown ul li {
+  padding: 10px;
+  transition: 0.4s;
+}
+
+.top-bar .funds .funds-dropdown ul li:hover {
+  background-color: #F5F5F2;
+}
+
+.top-bar .funds .funds-dropdown ul li a {
+  text-decoration: none;
+  width: 100%;
+  font-size: 15px;
+  color: #4d4d4d;
 }
 
 .top-bar .notification {
@@ -721,6 +760,36 @@ template {
 
 .top-bar .quit:hover {
   background-color: #F5F5F2;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+}
+
+.overlay .modal {
+  max-width: 720px;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+}
+
+.overlay .modal .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .statistic .general-statistic {
@@ -1063,6 +1132,143 @@ template {
     width: 100%;
     max-width: 100%;
   }
+  .links-icons {
+    opacity: 1 !important;
+  }
+}
+
+.quit-modal {
+  width: 360px;
+}
+
+.quit-modal .close-btn {
+  display: none;
+}
+
+.quit-modal .quit-modal-content .question-paragraph {
+  padding: 25px 20px;
+}
+
+.quit-modal .quit-modal-content .question-paragraph p {
+  color: #9B9B9B;
+  font-size: 17px;
+}
+
+.quit-modal .quit-modal-content .quit-modal-buttons {
+  border-top: 0.5px solid #E3E3E3;
+  padding: 20px;
+  overflow: auto;
+}
+
+.quit-modal .quit-modal-content .quit-modal-buttons .cancel-btn {
+  text-align: center;
+  float: right;
+  width: 100px;
+  border-radius: 3px;
+  background-color: #969696;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.quit-modal .quit-modal-content .quit-modal-buttons .cancel-btn:hover {
+  background-color: #BABABA;
+}
+
+.quit-modal .quit-modal-content .quit-modal-buttons .quit-btn {
+  text-align: center;
+  float: right;
+  width: 100px;
+  border-radius: 3px;
+  background-color: #FF7D2D;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.quit-modal .quit-modal-content .quit-modal-buttons .quit-btn:hover {
+  background-color: #FFA200;
+}
+
+.login-modal {
+  width: 100%;
+}
+
+.login-modal .close-btn {
+  display: none;
+}
+
+.login-modal .login-heading {
+  border-bottom: 0.5px solid #E3E3E3;
+}
+
+.login-modal .login-heading h2 {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #9B9B9B;
+  font-weight: lighter;
+  padding: 13px;
+}
+
+.login-modal .login-form form {
+  display: flex;
+  padding: 50px;
+}
+
+.login-modal .login-form form .field {
+  margin-right: 20px;
+}
+
+.login-modal .login-form form input {
+  width: 210px;
+  padding: 10px 40px;
+  border: 0.5px solid #E3E3E3;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+.login-modal .login-form form input:hover, .login-modal .login-form form input:focus {
+  outline: none;
+  border: 0.5px solid #B1B1B1;
+}
+
+.login-modal .login-form form input::placeholder {
+  color: #9B9B9B;
+}
+
+.login-modal .login-form form input[type=text] {
+  background-image: url("/images/icons/login.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+  background-size: 18px;
+}
+
+.login-modal .login-form form input[type=password] {
+  background-image: url("/images/icons/password.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 22px;
+}
+
+.login-modal .login-form form .submit {
+  text-align: center;
+  width: 170px;
+  border-radius: 3px;
+  background-color: #FF7D2D;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.login-modal .login-form form .submit:hover {
+  background-color: #FFA200;
 }
 
 * {

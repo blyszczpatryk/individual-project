@@ -82,6 +82,10 @@
 	}
 }
 
+.hide {
+	width: 80px;
+}
+
 @media only screen and (max-width: 767px) {
 	.show {
 		height: 100vh !important;
@@ -94,7 +98,7 @@
 		.menu {
 			height: 0;
 			overflow: hidden;
-			transition: height linear .4s;
+			transition: height linear .3s;
 			&:hover {
 				height: 500px;
 			}

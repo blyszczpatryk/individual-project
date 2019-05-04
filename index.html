@@ -79,25 +79,41 @@
 
 		<!--top bar-->
 
-			<div class="top-bar">
-				<div class="funds">
-					<img src="images/icons/wallet.svg" alt="icon">
-					<p>$1,500.00</p>
-					<img class="top-bar-arrow" src="images/icons/arrow-down.svg" alt="icon">
-				</div>
-				<div class="notification">
-					<img src="images/icons/notification.svg" alt="icon">
-					<div class="notification-dot">
-					</div>
-				</div>
-				<div class="profile">
-					<img src="images/icons/profile.svg" alt="icon">
-					<p>Leonardo Dicaprio</p>
-				</div>
-				<div class="quit">
-					<img src="images/icons/quit.svg" alt="icon">
+		<div class="top-bar">
+			<div class="funds">
+				<img src="images/icons/wallet.svg" alt="icon">
+				<p>$1,500.00</p>
+				<img class="top-bar-arrow" src="images/icons/arrow-down.svg" alt="icon">
+				<div class="funds-dropdown">
+					<ul>
+						<li>
+							<a href="#">Content</a>
+						</li>
+						<li>
+							<a href="#">Content</a>
+						</li>
+						<li>
+							<a href="#">Content</a>
+						</li>
+						<li>
+							<a href="#">Content</a>
+						</li>
+					</ul>
 				</div>
 			</div>
+			<div class="notification">
+				<img src="images/icons/notification.svg" alt="icon">
+				<div class="notification-dot">
+				</div>
+			</div>
+			<div class="profile" id="login-btn">
+				<img src="images/icons/profile.svg" alt="icon">
+				<p>Leonardo Dicaprio</p>
+			</div>
+			<div class="quit" id="quit-btn">
+				<img src="images/icons/quit.svg" alt="icon">
+			</div>
+		</div>
 		
 		<!--main content-->
 
@@ -312,6 +328,51 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Modal -->
+
+		<div class="overlay" id="overlay">
+
+			<!-- Quit Modal -->
+
+	  		<div class="modal quit-modal" id="quitModal">
+	    		<div class="close-btn" id="close-btn">x</div>
+	    		<div class="quit-modal-content">
+	    			<div class="question-paragraph">
+	    				<p>Do you really want to Quit?</p>
+	    			</div>
+	    			<div class="quit-modal-buttons">
+	    				<div class="quit-btn">Quit</div>
+	    				<div class="cancel-btn">Cancel</div>
+	    			</div>
+	    		</div>
+	  		</div>
+
+	  		<!-- Login Modal -->
+
+	  		<div class="modal login-modal" id="loginModal">
+	    		<div class="close-btn" id="close-btn">x</div>
+	    		<div class="login-modal-content">
+	    			<div class="login-heading">
+	    				<h2>login</h2>
+	    			</div>
+	    			<div class="login-form">
+	    				<form action="" method="POST">
+							<div class="field">
+							    <input type="text" name="user-name" placeholder="login name">
+							</div>
+							<div class="field">
+							    <input type="password" name="user-password" placeholder="password" class="password-icon">
+							</div>
+							<div class="submit">Enter
+							</div>
+						</form>
+	    			</div>
+	  			</div>
+			</div>
+		</div>
+
 	<script src="./js/script.js"></script>
+	<script src="./js/modal.js"></script>
 	</body>
 </html>
