@@ -5,6 +5,7 @@
 	width: 193px;
 	height: 100vh;
 	color: #7F7F7F;
+	transition: width linear .3s;
 	.nav-logo {
 		padding: 14px 20px;
 		position: relative;
@@ -12,7 +13,7 @@
 			font-size: 20px;
 			color: #7F7F7F;
 			position: absolute;
-			right: 15px;
+			right: 18px;
 			top: 20px;
 			transition: 0.4s;
 			&:hover {
@@ -48,7 +49,7 @@
 				width: 100%;
 				text-decoration: none;
 				color: #7F7F7F;
-				padding-left: 10px;
+				padding-left: 17px;
 			}
 		}
 	}
@@ -67,6 +68,7 @@
 		.contact-manager {
 			display: flex;
 			align-items: center;
+			cursor: pointer;
 			p {
 				padding-left: 10px;
 				cursor: pointer;
@@ -82,6 +84,19 @@
 	}
 }
 
+.hide {
+	width: 55px;
+	overflow: hidden;
+}
+
+.none {
+	display: none;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
 @media only screen and (max-width: 767px) {
 	.show {
 		height: 100vh !important;
@@ -91,6 +106,9 @@
 		z-index: 2;
 		width: 100%;
 		height: auto;
+		img {
+			visibility: visible !important;
+		}
 		.menu {
 			height: 0;
 			overflow: hidden;

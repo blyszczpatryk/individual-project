@@ -1,0 +1,98 @@
+.message-modal {
+	width: 100%;
+	.message-heading {
+		border-bottom: 0.5px solid $border-color;
+		h2 {
+			text-transform: uppercase;
+			font-size: $heading-font-size;
+			color: $main-text-color;
+			font-weight: $heading-font-weight;
+			padding: 13px;
+		}
+	}
+	.message-person {
+		border-bottom: 0.5px solid $border-color;
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		.avatar {
+			text-align: center;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: left;
+			}
+		}
+		.person {
+			margin-left: 10px;
+			h2 {
+				font-size: 25px;
+			}
+			.online-btn {
+				width: 45px;
+				text-align: center;
+				border-radius: 3px;
+				font-size: 13px;
+				color: white;
+				padding: 3px;
+				margin-top: 5px;
+				background-color: #00B834;
+			}
+		}
+	}
+	.message-output {
+		border-bottom: 0.5px solid $border-color;
+		min-height: 200px;
+	}
+	form {
+		display: flex;
+		padding: 20px;
+		.field {
+			width: 90%;
+		}
+		textarea {
+			color: $paragraph-color;
+			width: 100%;
+			max-height: 40px;
+			outline: none;
+			border: none;
+			border: 0.5px solid $border-color;
+			border-radius: 3px;
+			padding: 10px;
+			padding-left: 40px;
+			background-image: url('/images/icons/message.svg');
+			background-repeat: no-repeat;
+			background-size: 18px;
+			background-position: 10px;
+			&:hover,
+			&:focus {
+				outline: none;
+				border: 0.5px solid #B1B1B1;
+			}
+			&::placeholder {
+				color: $main-text-color;
+			}
+		}
+	}
+	.send-btn {
+		text-align: center;
+		width: 100px;
+		height: 40px;
+		border-radius: 3px;
+		background-color: $btn-color;
+		color: white;
+		font-size: 18px;
+		padding: 10px;
+		transition: 0.4s;
+		cursor: pointer;
+		margin-left: 20px;
+		&:hover {
+			background-color: $btn-hover-color;
+		}
+	}
+}

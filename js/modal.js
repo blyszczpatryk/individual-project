@@ -1,10 +1,10 @@
 var quitBtn = document.getElementById('quit-btn');
 
-var loginBtn = document.getElementById('login-btn')
+var loginBtn = document.getElementById('login-btn');
+
+var messageBtn = document.getElementById('message');
 
 var overlay = document.getElementById('overlay');
-
-var close = document.getElementById('close-btn');
 
 function openModal(modal) {
   document.querySelectorAll('#overlay > *').forEach(function(modal) {
@@ -14,6 +14,18 @@ function openModal(modal) {
   document.querySelector(modal).style.display = 'block';
 }
 
+
+function closeModal() {
+  overlay.style.display = 'none';
+}
+
+document.querySelectorAll('#overlay .close-btn').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault()
+    closeModal()
+  })
+})
+
 loginBtn.onclick = function() {
 	openModal('#loginModal')
 }
@@ -22,12 +34,8 @@ quitBtn.onclick = function() {
 	openModal('#quitModal')
 }
 
-function closeModal() {
-	overlay.style.display = 'none';
-}
-
-close.onclick = function() {
-	closeModal()
+messageBtn.onclick = function() {
+  openModal('#messageModal')
 }
 
 overlay.onclick = function(e) {
