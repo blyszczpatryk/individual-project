@@ -446,6 +446,269 @@ template {
   display: none;
 }
 
+.quit-modal {
+  width: 360px;
+}
+
+.quit-modal .close-btn {
+  display: none;
+}
+
+.quit-modal .quit-modal-content .question-paragraph {
+  padding: 25px 20px;
+}
+
+.quit-modal .quit-modal-content .question-paragraph p {
+  color: #9B9B9B;
+  font-size: 17px;
+}
+
+.quit-modal .quit-modal-content .quit-modal-buttons {
+  border-top: 0.5px solid #E3E3E3;
+  padding: 20px;
+  overflow: auto;
+}
+
+.quit-modal .quit-modal-content .quit-modal-buttons .cancel-btn {
+  text-align: center;
+  float: right;
+  width: 100px;
+  border-radius: 3px;
+  background-color: #969696;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.quit-modal .quit-modal-content .quit-modal-buttons .cancel-btn:hover {
+  background-color: #BABABA;
+}
+
+.quit-modal .quit-modal-content .quit-modal-buttons .quit-btn {
+  text-align: center;
+  float: right;
+  width: 100px;
+  border-radius: 3px;
+  background-color: #FF7D2D;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.quit-modal .quit-modal-content .quit-modal-buttons .quit-btn:hover {
+  background-color: #FFA200;
+}
+
+.login-modal {
+  width: 100%;
+}
+
+.login-modal .close-btn {
+  display: none;
+}
+
+.login-modal .login-heading {
+  border-bottom: 0.5px solid #E3E3E3;
+}
+
+.login-modal .login-heading h2 {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #9B9B9B;
+  font-weight: lighter;
+  padding: 13px;
+}
+
+.login-modal .login-form form {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+}
+
+.login-modal .login-form form .field {
+  margin-right: 20px;
+}
+
+.login-modal .login-form form input {
+  width: 210px;
+  padding: 10px 40px;
+  color: #4d4d4d;
+  border: 0.5px solid #E3E3E3;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+.login-modal .login-form form input:hover, .login-modal .login-form form input:focus {
+  outline: none;
+  border: 0.5px solid #B1B1B1;
+}
+
+.login-modal .login-form form input:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+.login-modal .login-form form input::placeholder {
+  color: #9B9B9B;
+}
+
+.login-modal .login-form form input[type=text] {
+  background-image: url("/images/icons/login.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 8px;
+  background-size: 18px;
+}
+
+.login-modal .login-form form input[type=password] {
+  background-image: url("/images/icons/password.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 22px;
+}
+
+.login-modal .login-form form .enter-btn {
+  text-align: center;
+  width: 170px;
+  border-radius: 3px;
+  background-color: #FF7D2D;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.login-modal .login-form form .enter-btn:hover {
+  background-color: #FFA200;
+}
+
+.message-modal {
+  width: 100%;
+}
+
+.message-modal .message-heading {
+  border-bottom: 0.5px solid #E3E3E3;
+}
+
+.message-modal .message-heading h2 {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #9B9B9B;
+  font-weight: lighter;
+  padding: 13px;
+}
+
+.message-modal .message-person {
+  border-bottom: 0.5px solid #E3E3E3;
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.message-modal .message-person .avatar {
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.message-modal .message-person .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.message-modal .message-person .person {
+  margin-left: 10px;
+}
+
+.message-modal .message-person .person h2 {
+  font-size: 25px;
+}
+
+.message-modal .message-person .person .online-btn {
+  width: 45px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 13px;
+  color: white;
+  padding: 3px;
+  margin-top: 5px;
+  background-color: #00B834;
+}
+
+.message-modal .message-output {
+  border-bottom: 0.5px solid #E3E3E3;
+  min-height: 200px;
+}
+
+.message-modal form {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.message-modal form .field {
+  width: 90%;
+}
+
+.message-modal form textarea {
+  color: #4d4d4d;
+  width: 100%;
+  max-height: 40px;
+  outline: none;
+  border: none;
+  border: 0.5px solid #E3E3E3;
+  border-radius: 3px;
+  padding: 10px;
+  padding-left: 40px;
+  background-image: url("/images/icons/message.svg");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 10px;
+}
+
+.message-modal form textarea:hover, .message-modal form textarea:focus {
+  outline: none;
+  border: 0.5px solid #B1B1B1;
+}
+
+.message-modal form textarea:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+.message-modal form textarea::placeholder {
+  color: #9B9B9B;
+}
+
+.message-modal .send-btn {
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #FF7D2D;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.message-modal .send-btn:hover {
+  background-color: #FFA200;
+}
+
 .sidebar {
   top: 0;
   position: fixed;
@@ -453,6 +716,7 @@ template {
   width: 193px;
   height: 100vh;
   color: #7F7F7F;
+  transition: width linear .3s;
 }
 
 .sidebar .nav-logo {
@@ -464,7 +728,7 @@ template {
   font-size: 20px;
   color: #7F7F7F;
   position: absolute;
-  right: 15px;
+  right: 18px;
   top: 20px;
   transition: 0.4s;
 }
@@ -511,7 +775,7 @@ template {
   width: 100%;
   text-decoration: none;
   color: #7F7F7F;
-  padding-left: 10px;
+  padding-left: 17px;
 }
 
 .sidebar .line {
@@ -535,6 +799,7 @@ template {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  cursor: pointer;
 }
 
 .sidebar .contacts .contact-manager p {
@@ -551,6 +816,19 @@ template {
   display: none;
 }
 
+.hide {
+  width: 55px;
+  overflow: hidden;
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 767px) {
   .show {
     height: 100vh !important;
@@ -559,6 +837,9 @@ template {
     z-index: 2;
     width: 100%;
     height: auto;
+  }
+  .sidebar img {
+    visibility: visible !important;
   }
   .sidebar .menu {
     height: 0;
@@ -653,6 +934,7 @@ template {
       justify-content: flex-end;
   border-bottom: 0.5px solid #E3E3E3;
   z-index: 1;
+  transition: left linear .3s;
 }
 
 .top-bar img {
@@ -808,8 +1090,10 @@ template {
 }
 
 .overlay .modal .close-btn {
+  color: #9B9B9B;
+  font-size: 20px;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 0;
   padding: 5px 10px;
   cursor: pointer;
@@ -827,58 +1111,50 @@ template {
   padding: 13px;
 }
 
-.statistic .date {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+.statistic .date-form {
   padding: 35px;
   border-bottom: 0.5px solid #E3E3E3;
 }
 
-.statistic .date p {
+.statistic .date-form p {
   font-size: 14px;
   color: #4d4d4d;
 }
 
-.statistic .date .date-from {
-  border: 1px solid #E3E3E3;
-  border-radius: 3px;
-  padding: 10px 60px 0 15px;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.statistic .date .date-from:hover {
-  border-color: #B1B1B1;
-}
-
-.statistic .date .date-to {
+.statistic .date-form form {
   display: -ms-flexbox;
   display: flex;
-  padding: 0 10px;
-  border: 1px solid #E3E3E3;
-  border-radius: 3px;
-  padding: 10px 10px 0 15px;
-  cursor: pointer;
-  transition: 0.4s;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
-.statistic .date .date-to:hover {
+.statistic .date-form form input[type=text] {
+  border: 0.5px solid #E3E3E3;
+  border-radius: 3px;
+  padding: 10px 15px;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer;
+  color: #4d4d4d;
+}
+
+.statistic .date-form form input[type=text]:hover, .statistic .date-form form input[type=text]:focus {
   border-color: #B1B1B1;
 }
 
-.statistic .date .date-to p {
-  padding-right: 60px;
+.statistic .date-form form input[name=date-from] {
+  width: 150px;
 }
 
-.statistic .date .date-to img {
-  height: 15px;
-  width: 15px;
-  filter: invert(50%);
+.statistic .date-form form input[name=date-to] {
+  width: 175px;
+  background-image: url("/images/icons/calendar.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 150px;
 }
 
-.statistic .date .refresh-btn {
+.statistic .date-form .refresh-btn {
   display: -ms-flexbox;
   display: flex;
   border-radius: 3px;
@@ -889,11 +1165,11 @@ template {
   cursor: pointer;
 }
 
-.statistic .date .refresh-btn:hover {
+.statistic .date-form .refresh-btn:hover {
   background-color: #FFA200;
 }
 
-.statistic .date .refresh-btn img {
+.statistic .date-form .refresh-btn img {
   height: 18px;
   width: 18px;
   filter: invert(100%);
@@ -1042,25 +1318,19 @@ template {
 }
 
 @media only screen and (max-width: 767px) {
-  .date {
-    -ms-flex-direction: column;
-        flex-direction: column;
+  .date-form form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .date .date-from {
+  .date-form form .field {
     margin: 0 auto;
     margin-bottom: 5px;
-    width: 115px;
-    height: 35px;
   }
-  .date .date-to {
-    margin: 0 auto;
-    margin-bottom: 5px;
-    width: 185px;
-    height: 35px;
-  }
-  .date .refresh-btn {
-    width: 40px;
+  .date-form .refresh-btn {
+    width: 39px;
+    height: 39px;
     margin: 0 auto !important;
+    margin-bottom: 5px;
   }
   .numbers .signups {
     margin: 0 auto;
@@ -1138,6 +1408,11 @@ template {
 .links table tr td a {
   color: #5D87A3;
   font-weight: lighter;
+  transition: 0.3s;
+}
+
+.links table tr td a:hover {
+  color: #FFA200;
 }
 
 .links table tr td .links-icons {
@@ -1177,77 +1452,11 @@ template {
   }
 }
 
-.quit-modal {
-  width: 360px;
-}
-
-.quit-modal .close-btn {
-  display: none;
-}
-
-.quit-modal .quit-modal-content .question-paragraph {
-  padding: 25px 20px;
-}
-
-.quit-modal .quit-modal-content .question-paragraph p {
-  color: #9B9B9B;
-  font-size: 17px;
-}
-
-.quit-modal .quit-modal-content .quit-modal-buttons {
-  border-top: 0.5px solid #E3E3E3;
-  padding: 20px;
-  overflow: auto;
-}
-
-.quit-modal .quit-modal-content .quit-modal-buttons .cancel-btn {
-  text-align: center;
-  float: right;
-  width: 100px;
-  border-radius: 3px;
-  background-color: #969696;
-  color: white;
-  font-size: 18px;
-  padding: 10px;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.quit-modal .quit-modal-content .quit-modal-buttons .cancel-btn:hover {
-  background-color: #BABABA;
-}
-
-.quit-modal .quit-modal-content .quit-modal-buttons .quit-btn {
-  text-align: center;
-  float: right;
-  width: 100px;
-  border-radius: 3px;
-  background-color: #FF7D2D;
-  color: white;
-  font-size: 18px;
-  padding: 10px;
-  margin-left: 20px;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.quit-modal .quit-modal-content .quit-modal-buttons .quit-btn:hover {
-  background-color: #FFA200;
-}
-
-.login-modal {
-  width: 100%;
-}
-
-.login-modal .close-btn {
-  display: none;
-}
-
-.login-modal .login-heading {
+.banners .banners-text {
   border-bottom: 0.5px solid #E3E3E3;
 }
 
-.login-modal .login-heading h2 {
+.banners .banners-text h2 {
   text-transform: uppercase;
   font-size: 17px;
   color: #9B9B9B;
@@ -1255,65 +1464,146 @@ template {
   padding: 13px;
 }
 
-.login-modal .login-form form {
-  display: -ms-flexbox;
-  display: flex;
-  padding: 50px;
-}
-
-.login-modal .login-form form .field {
-  margin-right: 20px;
-}
-
-.login-modal .login-form form input {
-  width: 210px;
-  padding: 10px 40px;
-  color: #4d4d4d;
-  border: 0.5px solid #E3E3E3;
-  border-radius: 3px;
-  transition: 0.4s;
-}
-
-.login-modal .login-form form input:hover, .login-modal .login-form form input:focus {
-  outline: none;
-  border: 0.5px solid #B1B1B1;
-}
-
-.login-modal .login-form form input:-ms-input-placeholder {
-  color: #9B9B9B;
-}
-
-.login-modal .login-form form input::placeholder {
-  color: #9B9B9B;
-}
-
-.login-modal .login-form form input[type=text] {
-  background-image: url("/images/icons/login.svg");
-  background-repeat: no-repeat;
-  background-position: 10px 8px;
-  background-size: 18px;
-}
-
-.login-modal .login-form form input[type=password] {
-  background-image: url("/images/icons/password.svg");
-  background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 22px;
-}
-
-.login-modal .login-form form .submit {
+.banners .add-btn {
   text-align: center;
-  width: 170px;
+  width: 130px;
   border-radius: 3px;
   background-color: #FF7D2D;
   color: white;
   font-size: 18px;
   padding: 10px;
+  margin: 23px auto;
   transition: 0.4s;
   cursor: pointer;
 }
 
-.login-modal .login-form form .submit:hover {
+.banners .add-btn:hover {
+  background-color: #FFA200;
+}
+
+.banners table {
+  border-top: 0.5px solid #E3E3E3;
+  border-spacing: 0;
+  color: #9B9B9B;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banners table tr:hover,
+.banners table tr:hover .banners-icons {
+  background-color: #F0F3F3;
+  opacity: 1;
+}
+
+.banners table tr td {
+  padding: 20px 20px;
+  border-bottom: 0.5px solid #E3E3E3;
+}
+
+.banners table tr td a {
+  color: #5D87A3;
+  font-weight: lighter;
+  transition: 0.3s;
+}
+
+.banners table tr td a:hover {
+  color: #FFA200;
+}
+
+.banners table tr td .banners-icons {
+  opacity: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.banners table tr td .banners-icons img {
+  filter: invert(50%);
+}
+
+.banners table tr td .banners-icons img:hover {
+  transform: scale(1.2);
+}
+
+.banners table tr td .banners-icons .link-icon {
+  height: 10px;
+  padding-right: 25px;
+}
+
+.banners table tr td .banners-icons .trash-icon {
+  height: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .scroll-wrapper table {
+    width: 100%;
+    max-width: 100%;
+  }
+  .banners-icons {
+    opacity: 1 !important;
+  }
+}
+
+.personal-data .section-heading {
+  border-bottom: 0.5px solid #E3E3E3;
+}
+
+.personal-data .section-heading h2 {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #9B9B9B;
+  font-weight: lighter;
+  padding: 13px;
+}
+
+.personal-data .personal-data-form {
+  border-bottom: 0.5px solid #E3E3E3;
+  padding: 40px 0 25px;
+}
+
+.personal-data .personal-data-form .data-part {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.personal-data .personal-data-form .data-part label {
+  display: inline-block;
+  padding-top: 10px;
+  color: #9B9B9B;
+  font-weight: bold;
+}
+
+.personal-data .personal-data-form .data-part input[type=text] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border: 0.5px solid #E3E3E3;
+  color: #4d4d4d;
+}
+
+.personal-data .personal-data-form .data-part input[type=text]:hover, .personal-data .personal-data-form .data-part input[type=text]:focus {
+  border-color: #B1B1B1;
+}
+
+.personal-data .save-btn {
+  text-align: center;
+  width: 130px;
+  border-radius: 3px;
+  background-color: #FF7D2D;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  margin: 23px auto;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.personal-data .save-btn:hover {
   background-color: #FFA200;
 }
 
@@ -1337,6 +1627,11 @@ body {
   left: 193px;
   right: 0;
   top: 60px;
+  transition: left linear .3s;
+}
+
+.full-width {
+  left: 55px;
 }
 
 .section-container {

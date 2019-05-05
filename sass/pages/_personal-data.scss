@@ -1,0 +1,54 @@
+.personal-data {
+	.section-heading {
+		border-bottom: 0.5px solid $border-color;
+		h2 {
+			text-transform: uppercase;
+			font-size: $heading-font-size;
+			color: $main-text-color;
+			font-weight: $heading-font-weight;
+			padding: 13px;
+		}
+	}
+	.personal-data-form {
+		border-bottom: 0.5px solid $border-color;
+		padding: 40px 0 25px;
+		.data-part {
+			width: 40%;
+			margin: 0 auto;
+			label {
+				display: inline-block;
+				padding-top: 10px;
+				color: $main-text-color;
+				font-weight: bold;
+			}
+			input[type=text] {
+				width: 100%;
+				padding: 8px;
+				margin-bottom: 15px;
+				border: none;
+				outline: none;
+				border: 0.5px solid $border-color;
+				color: $paragraph-color;
+				&:hover,
+				&:focus {
+					border-color: #B1B1B1;
+				}
+			}
+		}
+	}
+	.save-btn {
+		text-align: center;
+		width: 130px;
+		border-radius: 3px;
+		background-color: $btn-color;
+		color: white;
+		font-size: 18px;
+		padding: 10px;
+		margin: 23px auto;
+		transition: 0.4s;
+		cursor: pointer;
+		&:hover {
+			background-color: $btn-hover-color;
+		}
+	}
+}

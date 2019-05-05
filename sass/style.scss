@@ -1,13 +1,16 @@
 @import 'variables';
 @import 'layout';
 @import 'normalize';
+@import 'quit-modal';
+@import 'login-modal';
+@import 'message-modal';
 @import 'components/sidebar';
 @import 'components/topbar';
 @import 'components/modal';
 @import 'sections/statistic';
 @import 'sections/links';
-@import 'quit-modal';
-@import 'login-modal';
+@import 'pages/banners';
+@import 'pages/personal-data';
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
@@ -32,6 +35,11 @@ body {
 	left: 193px;
 	right: 0;
 	top: 60px;
+	transition: left linear .3s;
+}
+
+.full-width {
+	left: 55px;
 }
 
 .section-container {
