@@ -13,7 +13,7 @@
 			font-size: 20px;
 			color: #7F7F7F;
 			position: absolute;
-			right: 18px;
+			right: 16px;
 			top: 20px;
 			transition: 0.4s;
 			&:hover {
@@ -27,7 +27,6 @@
 		li {
 			display: flex;
 			align-items: center;
-			padding: 12px 20px;
 			transition: 0.4s;
 			cursor: pointer;
 			&:hover {
@@ -49,7 +48,11 @@
 				width: 100%;
 				text-decoration: none;
 				color: #7F7F7F;
-				padding-left: 17px;
+				padding: 12px 20px;
+				display: flex;
+				p {
+					padding-left: 17px;
+				}
 			}
 		}
 	}
@@ -85,12 +88,18 @@
 }
 
 .hide {
-	width: 55px;
+	width: 54px;
 	overflow: hidden;
 }
 
 .none {
-	display: none;
+	padding: 15px 10px !important;
+	h4 {
+		display: none;
+	}
+	img {
+		width: 35px;
+	}
 }
 
 .hidden {
@@ -100,6 +109,7 @@
 @media only screen and (max-width: 767px) {
 	.show {
 		height: 100vh !important;
+		overflow: scroll !important;
 	}
 
 	.sidebar {

@@ -19,28 +19,34 @@
 		form {
 			display: flex;
 			justify-content: center;
-			input[type=text] {
-				border: 0.5px solid $border-color;
-				border-radius: 3px;
-				padding: 10px 15px;
-				transition: 0.3s;
-				outline: none;
-				cursor: pointer;
-				color: $paragraph-color;
-				&:hover,
-				&:focus {
-					border-color: #B1B1B1;
+			.field {
+				position: relative;
+				img {
+					width: 17px;
+					position: absolute;
+					top: 10px;
+					right: 10px;
+					filter: invert(50%);
 				}
-			}
-			input[name=date-from] {
-				width: 150px;
-			}
-			input[name=date-to] {
-				width: 175px;
-				background-image: url('../../images/icons/calendar.svg');
-				background-size: 15px;
-				background-repeat: no-repeat;
-				background-position: 150px;
+				input[type=text] {
+					border: 0.5px solid $border-color;
+					border-radius: 3px;
+					padding: 10px 15px;
+					transition: 0.3s;
+					outline: none;
+					cursor: pointer;
+					color: $paragraph-color;
+					&:hover,
+					&:focus {
+						border-color: #B1B1B1;
+					}
+				}
+				input[name=date-from] {
+					width: 150px;
+				}
+				input[name=date-to] {
+					width: 175px;
+				}
 			}
 		}
 		.refresh-btn {
