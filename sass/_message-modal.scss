@@ -54,6 +54,14 @@
 		padding: 20px;
 		.field {
 			width: 90%;
+			position: relative;
+			img {
+				width: 17px;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				filter: invert(50%);
+			}
 		}
 		textarea {
 			color: $paragraph-color;
@@ -65,10 +73,6 @@
 			border-radius: 3px;
 			padding: 10px;
 			padding-left: 40px;
-			background-image: url('../images/icons/message.svg');
-			background-repeat: no-repeat;
-			background-size: 18px;
-			background-position: 10px;
 			&:hover,
 			&:focus {
 				outline: none;
